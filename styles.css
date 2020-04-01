@@ -80,7 +80,10 @@ label {
 }
 
 .input-textarea {
-    min-height: 5.0em;
+    min-height: 120px;
+    width: 100%;
+    resize: vertical;
+    padding: 0.625rem;
 }
 
 .submit-button {
