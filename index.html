@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html>
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Forml</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div>
+            <div class="center-text">
+                <h1 id="title">Financial Needs Survey</h1>
+            </div>
+            <div class="center-text width-500">
+                <p id="description">Please complete the form below in order to access your current financial needs. The data in the form will be used to conect you to a financial advisor to meet your specific needs.</p>
+            </div>
+            <div class="form-container">
+                <form action="#" id="survey-form">
+                    <div class="form-group">
+                        <label for="name" class="label-format" style="padding-top:0;" id="name-label">Name</label>
+                        <input type="text" id="name" name="name" class="text-enter" placeholder="Enter Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="label-format" id="email-label">Email</label>
+                        <input type="email" id="email" name="email" class="text-enter" placeholder="Enter Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number" class="label-format" id="number-of-accounts">Total Number of Financeial Accounts</label>
+                        <input type="number" id="number" name="number" class="text-enter" placeholder="Enter Number of Accounts (max 10)" min="1" max="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience" class="label-format" id="experience-label">Investment Experience</label>
+                        <select name="experience" id="dropdown" class="text-enter" required>
+                            <option value="null" selected disabled>Please select an experience level from the drop-down list</option>
+                            <option value="none">No Investment Experience</option>
+                            <option value="some">Some Investment Experience</option>
+                            <option value="high">Extensive Investment Experience</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p class="label-format" style="padding-bottom:0;">When would you like to begin</p>                        
+                        <label>
+                            <input class="input-radio" type="radio" value="now" name="start-cycle" checked>As Soon As Possible
+                        </label>
+                        <label>
+                            <input class="input-radio" type="radio" value="next-month" name="start-cycle" />Next Month
+                        </label>
+                        <label>
+                            <input class="input-radio" type="radio" value="next-quarter" name="start-cycle">Next Quarter
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <p class="label-format" style="padding-bottom:0;">What Features are You Interested In</p>                        
+                        <label>
+                            <input class="input-radio" type="checkbox" value="interest-wealth" name="feature-list">Wealth Management
+                        </label>
+                        <label>
+                            <input class="input-radio" type="checkbox" value="interest-retirement" name="feature-list">Retirement Planning
+                        </label>
+                        <label>
+                            <input class="input-radio" type="checkbox" value="interest-estate" name="feature-list">Estate Planning
+                        </label>
+                        <label>
+                            <input class="input-radio" type="checkbox" value="interest-insurance" name="feature-list">Insruance Planning
+                        </label>
+                        <label>
+                            <input class="input-radio" type="checkbox" value="interest-consolidation" name="sfeature-list">Asset Consolidation
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments" class="label-format">Enter Any Additional Comments Below</label>
+                        <input type="textare" name="comments" class="text-enter input-textarea">
+                    
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submit" name="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
